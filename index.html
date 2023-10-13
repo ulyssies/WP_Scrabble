@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="styles.css">
+	<title>Scrabble Board Game</title>
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="scrabble">
+			<img class="logo" src="Scrabble-Logo.png" alt="Scrabble logo" />
+			
+			<div class="play">
+				<p>Click and drag the tiles below to play!</p>				
+				 <div class="tile white-tile w">
+					<p class="empty-tile">W</p>
+				 </div>
+				 
+				 <div class="tile white-tile i">
+					<p class="empty-tile">I</p>
+				 </div>
+				 
+				 <div class="tile white-tile n1">
+					<p class="empty-tile">N</p>
+				 </div>
+				 
+				 <div class="tile white-tile n2">
+					<p class="empty-tile">N</p>
+				 </div>
+				 
+				 <div class="tile white-tile r">
+					<p class="empty-tile">E</p>
+				 </div>
+				 
+				 <div class="tile white-tile r">
+					<p class="empty-tile">R</p>
+				 </div>
+			 </div>
+		</div>
+
+		<div id="main-board">
+			<div class="row"> <!-- row 1 -->
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+			</div> <!-- end row 1 -->
+			
+			<div class="row"> <!-- row 2 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 2 -->
+			
+			<div class="row"> <!-- row 3 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 3 -->
+			
+			<div class="row"> <!-- row 4 -->
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			</div> <!-- end row 4 -->
+			
+			<div class="row"> <!-- row 5 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 5 -->
+			
+			<div class="row"> <!-- row 6 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 6 -->
+			
+			<div class="row"> <!-- row 7 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 7 -->
+			
+			<div class="row"> <!-- row 8 -->
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			
+				<div class="tile dw">
+					<p class="bonus-tile star">&#9733;</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+			</div> <!-- end row 8 -->
+			
+			<div class="row"> <!-- row 9 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 9 -->
+			
+			<div class="row"> <!-- row 10 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 10 -->
+			
+			<div class="row"> <!-- row 11 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 11 -->
+			
+			<div class="row"> <!-- row 12 -->
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+			</div> <!-- end row 12 -->
+			
+			<div class="row"> <!-- row 13 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 13 -->
+			
+			<div class="row"> <!-- row 14 -->
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tl">
+					<p class="bonus-tile">TL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dw">
+					<p class="bonus-tile">DW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+			</div> <!-- end row 14 -->
+			
+			<div class="row"> <!-- row 15 -->
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile dl">
+					<p class="bonus-tile">DL</p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile white-tile">
+					<p class="empty-tile"></p>
+				</div>
+				
+				<div class="tile tw">
+					<p class="bonus-tile">TW</p>
+				</div>
+			</div> <!-- end row 15 -->
+		</div>
+		
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body, div, h1, h2 ,h3, h4, h5, h6, p{
+	margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins';
+	font-size: 13px;	
+}
+
+#container{
+	width: 75%;
+    margin: auto;
+	display:flex;
+	border: 10px solid #4b1201;
+	background: #e6e4d8;
+}
+
+#scrabble{
+	background: #1c2743;
+	width:10%;
+}
+
+#scrabble p{
+	color:white;
+	text-align: center;
+    margin: 5px;
+}
+
+#scrabble .tile{
+	margin:auto;
+	animation: roll 3s infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo{
+	transform: rotate(90deg);
+    width: 300%;
+    position: relative;
+    top: 414px;
+    right: 143px;
+}
+
+#main-board{
+	margin:auto;
+	width:90%;
+}
+
+.row{
+	display:flex;
+	flex-wrap: nowrap;
+}
+
+.tile{
+	width: 100px;
+	margin: 5px;
+	text-align: center;
+	line-height: 57px;
+	font-size: 22px;
+}
+
+p{
+	color: #373233;
+}
+
+.white-tile{
+    background: #fac688;
+    border: 1px solid #df9b61;
+    -webkit-box-shadow: inset 2px 0 4px rgba(223, 155, 97,1);
+    -moz-box-shadow: inset 2px 0 4px rgba(223, 155, 97,1);
+    box-shadow: inset 2px 0 4px rgba(223, 155, 97,1);
+}
+
+.tw{
+	background: #d22f2f;
+	border: 1px solid rgba(135,42,43);
+	-webkit-box-shadow: inset 2px 0 4px rgba(135,42,43,1);
+	-moz-box-shadow: inset 2px 0 4px rgba(135,42,43,1);
+	box-shadow: inset 2px 0 4px rgba(135,42,43,1);
+}
+
+.dl{
+	background: #91CEFF;
+	border: 1px solid rgba(125,177,219);
+	-webkit-box-shadow: inset 2px 0 4px rgba(125,177,219,1);
+	-moz-box-shadow: inset 2px 0 4px rgba(125,177,219,1);
+	box-shadow: inset 2px 0 4px rgba(125,177,219,1);
+}
+
+.dw{
+	background: #f8bec6;
+	border: 1px solid rgba(212,163,169);
+	-webkit-box-shadow: inset 2px 0 4px rgba(212,163,169,1);
+	-moz-box-shadow: inset 2px 0 4px rgba(212,163,169,1);
+	box-shadow: inset 2px 0 4px rgba(212,163,169,1);
+}
+
+.tl{
+	background: #0183C1;
+	border: 1px solid rgba(2, 109, 158);
+	-webkit-box-shadow: inset 2px 0 4px rgba(2, 109, 158,1);
+	-moz-box-shadow: inset 2px 0 4px rgba(2, 109, 158,1);
+	box-shadow: inset 2px 0 4px rgba(2, 109, 158,1);
+}
+
+.star{
+	font-size:200%;
+}
